@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://byf17nwm7nbhm"]
+
+[ext_resource type="Script" uid="uid://cddy8q5k1gi4h" path="res://eliminar_jugador.gd" id="1_hb6vi"]
+[ext_resource type="FontFile" uid="uid://bd0hw1a4wx33y" path="res://PixelifySans-VariableFont_wght.ttf" id="2_jdppq"]
+
+[node name="EliminarJugador" type="Control" unique_id=1937862747]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hb6vi")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=1570724413]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.3531431, 0.23512599, 0.09530514, 1)
+
+[node name="TituloLabel" type="Label" parent="." unique_id=862316931]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 50.0
+offset_right = 726.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+text = "🗑️ Eliminar Jugador"
+
+[node name="PreguntaLabel" type="Label" parent="." unique_id=415978360]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 200.0
+offset_right = 876.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+text = "¿Estás seguro que deseas eliminar esta cuenta?"
+
+[node name="NombreJugadorLabel" type="Label" parent="." unique_id=143075526]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 270.0
+offset_right = 876.0
+offset_bottom = 320.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+
+[node name="BtnConfirmar" type="Button" parent="." unique_id=363502328]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 370.0
+offset_right = 526.0
+offset_bottom = 420.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+text = "✅ Sí, eliminar"
+
+[node name="BtnCancelar" type="Button" parent="." unique_id=154391028]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 370.0
+offset_right = 826.0
+offset_bottom = 420.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+text = "❌ Cancelar"
+
+[node name="MensajeLabel" type="Label" parent="." unique_id=1265058212]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 450.0
+offset_right = 826.0
+offset_bottom = 490.0
+theme_override_fonts/font = ExtResource("2_jdppq")
+
+[connection signal="pressed" from="BtnConfirmar" to="." method="_on_btn_confirmar_pressed"]
+[connection signal="pressed" from="BtnCancelar" to="." method="_on_btn_cancelar_pressed"]

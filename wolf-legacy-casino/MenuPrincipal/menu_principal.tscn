@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://xayo02vthl1e"]
+
+[ext_resource type="Script" uid="uid://8i4hhiq25jwl" path="res://menu_principal.gd" id="1_bj1uy"]
+[ext_resource type="FontFile" uid="uid://bd0hw1a4wx33y" path="res://PixelifySans-VariableFont_wght.ttf" id="2_gmcsc"]
+[ext_resource type="FontFile" uid="uid://s4t6say2viwq" path="res://BitcountPropDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf" id="2_ul6ys"]
+
+[node name="MenuPrincipal" type="Control" unique_id=1835338696]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bj1uy")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=2050976813]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04913715, 0.16921844, 0.13452826, 1)
+
+[node name="Titulo" type="Label" parent="." unique_id=382143617]
+layout_mode = 1
+offset_left = 240.0
+offset_top = 30.0
+offset_right = 944.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(1.4618212, 1.5459632, 5.0947852e-05, 1)
+theme_override_colors/font_shadow_color = Color(0.72, 0.5484, 0.25200003, 1)
+theme_override_colors/font_outline_color = Color(0.56693184, 0.49491936, 0.21823463, 1)
+theme_override_constants/line_spacing = 2
+theme_override_constants/paragraph_spacing = -1
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 11
+theme_override_constants/shadow_outline_size = 2
+theme_override_fonts/font = ExtResource("2_ul6ys")
+theme_override_font_sizes/font_size = 72
+text = "WOLF CASINO"
+horizontal_alignment = 1
+
+[node name="PlayerInfoPanel" type="Panel" parent="." unique_id=1572973000]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -350.0
+offset_top = -80.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="PlayerNameLabel" type="Label" parent="PlayerInfoPanel" unique_id=1491573590]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 340.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Bienvenido: "
+
+[node name="PlayerBalanceLabel" type="Label" parent="PlayerInfoPanel" unique_id=1563054500]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 45.0
+offset_right = 340.0
+offset_bottom = 75.0
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Saldo: $0"
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="." unique_id=1266557383]
+layout_mode = 0
+offset_left = 426.0
+offset_top = 200.0
+offset_right = 726.0
+offset_bottom = 600.0
+
+[node name="BtnRegistrar" type="Button" parent="ButtonsContainer" unique_id=97386358]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Registrarse"
+
+[node name="BtnMostrar" type="Button" parent="ButtonsContainer" unique_id=1282256784]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Mostrar jugador"
+
+[node name="BtnJugar" type="Button" parent="ButtonsContainer" unique_id=703359966]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Jugar"
+
+[node name="BtnModificar" type="Button" parent="ButtonsContainer" unique_id=1042270552]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Modificar"
+
+[node name="BtnEliminar" type="Button" parent="ButtonsContainer" unique_id=1938355206]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Eliminar cuenta"
+
+[node name="BtnEstadisticas" type="Button" parent="ButtonsContainer" unique_id=550473146]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Estadisticas"
+
+[node name="BtnSalir" type="Button" parent="ButtonsContainer" unique_id=1576331530]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_gmcsc")
+text = "Salir"
+
+[connection signal="pressed" from="ButtonsContainer/BtnRegistrar" to="." method="_on_btn_registrar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnMostrar" to="." method="_on_btn_mostrar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnJugar" to="." method="_on_btn_jugar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnModificar" to="." method="_on_btn_modificar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnEliminar" to="." method="_on_btn_eliminar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnEstadisticas" to="." method="_on_btn_estadisticas_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnSalir" to="." method="_on_btn_salir_pressed"]
