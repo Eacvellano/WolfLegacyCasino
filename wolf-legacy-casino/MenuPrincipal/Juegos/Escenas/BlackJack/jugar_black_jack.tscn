@@ -1,0 +1,319 @@
+[gd_scene format=3 uid="uid://cohphteewfqlh"]
+
+[ext_resource type="Texture2D" uid="uid://c2wuhi3d1k4tu" path="res://Juegos/Escenas/BlackJack/Imagenes/1.2 Poker cards.png" id="1_gilx7"]
+[ext_resource type="Script" uid="uid://dd3cljlrmxkx0" path="res://Juegos/Escenas/BlackJack/jugar_black_jack.gd" id="1_u3f1m"]
+[ext_resource type="Texture2D" uid="uid://7yiiq8ine4yk" path="res://Juegos/Escenas/BlackJack/Imagenes/Fondo.jpg" id="3_qum38"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qum38"]
+bg_color = Color(0.47843137, 0.05882353, 0.10980392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.8901961)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8d6dm"]
+bg_color = Color(0.3529412, 0.043137256, 0.078431375, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msnxt"]
+bg_color = Color(0.6117647, 0.08627451, 0.14509805, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a6cmm"]
+bg_color = Color(0.47843137, 0.05882353, 0.10980392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hnfeu"]
+bg_color = Color(0.3529412, 0.043137256, 0.078431375, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_22jdm"]
+bg_color = Color(0.6117647, 0.08627451, 0.14509805, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbr78"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color(0.16470589, 0.101960786, 0.2901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wjlei"]
+bg_color = Color(0.16470589, 0.101960786, 0.2901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0pjh5"]
+bg_color = Color(0.47843137, 0.05882353, 0.10980392, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nv80q"]
+bg_color = Color(0.6117647, 0.08627451, 0.14509805, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ujn0"]
+bg_color = Color(0.3529412, 0.043137256, 0.078431375, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9607843, 0.77254903, 0.25882354, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 6
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_peq8f"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color(0.16862746, 0.12941177, 0, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.84313726, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7phk"]
+bg_color = Color(0.3529412, 0.039215688, 0.078431375, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.84313726, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y3ky"]
+bg_color = Color(0.47843137, 0.05882353, 0.10980392, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.84313726, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ds7me"]
+bg_color = Color(0.22745098, 0.023529412, 0.050980393, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.84313726, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[node name="JugarBlackJack" type="Node2D" unique_id=1698710588]
+script = ExtResource("1_u3f1m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1983821879]
+offset_right = 1152.0
+offset_bottom = 1024.0
+texture = ExtResource("3_qum38")
+stretch_mode = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1893867278]
+position = Vector2(131.99994, 441)
+scale = Vector2(4.520833, 3.7878618)
+texture = ExtResource("1_gilx7")
+hframes = 15
+vframes = 5
+frame = 1
+region_enabled = true
+region_rect = Rect2(0, 0, 720, 320)
+
+[node name="SpriteCrupier" type="Sprite2D" parent="." unique_id=682609608]
+position = Vector2(130, 161)
+scale = Vector2(4.4479175, 3.7845569)
+texture = ExtResource("1_gilx7")
+hframes = 15
+vframes = 5
+frame = 1
+region_enabled = true
+region_rect = Rect2(0, 0, 720, 320)
+
+[node name="BotonPedir" type="Button" parent="." unique_id=1523387237]
+offset_left = 365.0
+offset_top = 572.0
+offset_right = 525.0
+offset_bottom = 646.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qum38")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8d6dm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_msnxt")
+text = "Pedir Carta"
+icon_alignment = 1
+
+[node name="BotonPlantarse" type="Button" parent="." unique_id=1816388673]
+offset_left = 617.0
+offset_top = 572.0
+offset_right = 776.0
+offset_bottom = 646.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_a6cmm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hnfeu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_22jdm")
+text = "Plantarse"
+
+[node name="EtiquetaPuntos" type="Label" parent="." unique_id=2118903178]
+offset_left = 24.0
+offset_top = 283.0
+offset_right = 272.0
+offset_bottom = 313.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_lbr78")
+text = "Puntos: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="EtiquetaCrupier" type="Label" parent="." unique_id=745687351]
+offset_left = 24.0
+offset_top = 4.0
+offset_right = 272.0
+offset_bottom = 34.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_wjlei")
+text = "Puntos: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="BotonNuevaPartida" type="Button" parent="." unique_id=818642265]
+offset_left = 985.0
+offset_top = 572.0
+offset_right = 1143.0
+offset_bottom = 645.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_0pjh5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nv80q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4ujn0")
+text = "Nueva Partida"
+
+[node name="EtiquetaSaldo" type="Label" parent="." unique_id=675978755]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1016.0
+offset_top = 11.0
+offset_right = 1133.0
+offset_bottom = 66.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_peq8f")
+text = "Saldo: $1000
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CajaApuesta" type="SpinBox" parent="." unique_id=1678030087]
+offset_left = 1063.0
+offset_top = 282.0
+offset_right = 1149.5
+offset_bottom = 313.0
+step = 50.0
+prefix = "$"
+
+[node name="BotonApostar" type="Button" parent="." unique_id=1987724807]
+offset_left = 51.0
+offset_top = 572.0
+offset_right = 210.0
+offset_bottom = 646.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_g7phk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7y3ky")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ds7me")
+text = "Apostar"
+
+[connection signal="pressed" from="BotonPedir" to="." method="_on_boton_pedir_pressed"]
+[connection signal="pressed" from="BotonPlantarse" to="." method="_on_boton_plantarse_pressed"]
+[connection signal="pressed" from="BotonNuevaPartida" to="." method="_on_boton_nueva_partida_pressed"]
+[connection signal="pressed" from="BotonApostar" to="." method="_on_boton_apostar_pressed"]

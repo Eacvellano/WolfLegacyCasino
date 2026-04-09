@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://xayo02vthl1e"]
 
-[ext_resource type="Script" uid="uid://8i4hhiq25jwl" path="res://menu_principal.gd" id="1_bj1uy"]
+[ext_resource type="Script" uid="uid://doqb5y5ftj12l" path="res://fondo.gd" id="1_ul6ys"]
 [ext_resource type="FontFile" uid="uid://bd0hw1a4wx33y" path="res://PixelifySans-VariableFont_wght.ttf" id="2_gmcsc"]
 [ext_resource type="FontFile" uid="uid://s4t6say2viwq" path="res://BitcountPropDouble-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf" id="2_ul6ys"]
 
@@ -11,7 +11,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_bj1uy")
 
 [node name="Fondo" type="ColorRect" parent="." unique_id=2050976813]
 layout_mode = 1
@@ -21,6 +20,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.04913715, 0.16921844, 0.13452826, 1)
+script = ExtResource("1_ul6ys")
 
 [node name="Titulo" type="Label" parent="." unique_id=382143617]
 layout_mode = 1
@@ -116,6 +116,7 @@ text = "Salir"
 [connection signal="pressed" from="ButtonsContainer/BtnRegistrar" to="." method="_on_btn_registrar_pressed"]
 [connection signal="pressed" from="ButtonsContainer/BtnMostrar" to="." method="_on_btn_mostrar_pressed"]
 [connection signal="pressed" from="ButtonsContainer/BtnJugar" to="." method="_on_btn_jugar_pressed"]
+[connection signal="pressed" from="ButtonsContainer/BtnJugar" to="Fondo" method="_on_btn_jugar_pressed"]
 [connection signal="pressed" from="ButtonsContainer/BtnModificar" to="." method="_on_btn_modificar_pressed"]
 [connection signal="pressed" from="ButtonsContainer/BtnEliminar" to="." method="_on_btn_eliminar_pressed"]
 [connection signal="pressed" from="ButtonsContainer/BtnEstadisticas" to="." method="_on_btn_estadisticas_pressed"]
