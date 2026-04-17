@@ -1,0 +1,193 @@
+[gd_scene format=3 uid="uid://68edq1p6uq3a"]
+
+[ext_resource type="Script" uid="uid://t1gjougoxrt8" path="res://ruleta.gd" id="1_8oig5"]
+[ext_resource type="Script" uid="uid://bb4kwaow1ufp7" path="res://rueda.gd" id="2_ncmmq"]
+[ext_resource type="Script" uid="uid://dy6vqs8a48xox" path="res://Bola.gd" id="3_juvvu"]
+[ext_resource type="FontFile" uid="uid://0pd4u10h7t3k" path="res://PressStart2P-Regular.ttf" id="4_8vngh"]
+[ext_resource type="AudioStream" uid="uid://dsp4gy2mrj4tq" path="res://giro (mp3cut.net) (1).mp3" id="4_c2yqw"]
+[ext_resource type="AudioStream" uid="uid://buy30ua5jqbmb" path="res://win.wav" id="4_xo31r"]
+
+[sub_resource type="FontVariation" id="FontVariation_juvvu"]
+base_font = ExtResource("4_8vngh")
+
+[sub_resource type="FontVariation" id="FontVariation_8vngh"]
+base_font = ExtResource("4_8vngh")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8vngh"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+corner_detail = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xo31r"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c2yqw"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vc8ed"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o504i"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffrnl"]
+bg_color = Color(0.78039217, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0odjh"]
+bg_color = Color(0.7806942, 4.548356e-06, 4.813075e-07, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8666667, 0, 1)
+
+[node name="Ruleta" type="Node2D" unique_id=923066961]
+script = ExtResource("1_8oig5")
+
+[node name="Fondo" type="ColorRect" parent="." unique_id=1014232522]
+z_index = -1
+offset_left = -2.0
+offset_top = 1.0
+offset_right = 862.0
+offset_bottom = 635.0
+color = Color(0.101960786, 0.039215688, 0.18039216, 1)
+
+[node name="Rueda" type="Node2D" parent="." unique_id=514378727]
+z_index = 1
+position = Vector2(470, 260)
+script = ExtResource("2_ncmmq")
+
+[node name="Bola" type="Node2D" parent="." unique_id=1081075216]
+z_index = 2
+position = Vector2(670, 260)
+script = ExtResource("3_juvvu")
+
+[node name="Audio giro" type="AudioStreamPlayer" parent="." unique_id=964671277]
+stream = ExtResource("4_c2yqw")
+
+[node name="Audio Win" type="AudioStreamPlayer" parent="." unique_id=1105688406]
+stream = ExtResource("4_xo31r")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=52760482]
+
+[node name="Lbl resultado" type="Label" parent="UI" unique_id=1663633944]
+offset_left = 644.0
+offset_top = 498.0
+offset_right = 848.0
+offset_bottom = 518.0
+theme_override_fonts/font = SubResource("FontVariation_juvvu")
+theme_override_font_sizes/font_size = 11
+text = "Elige una apuesta"
+
+[node name="LblSaldo" type="Label" parent="UI" unique_id=1523363609]
+offset_left = 33.0
+offset_top = 525.0
+offset_right = 201.0
+offset_bottom = 548.0
+theme_override_fonts/font = SubResource("FontVariation_8vngh")
+theme_override_font_sizes/font_size = 13
+text = "Saldo: $1000"
+
+[node name="LaLblApuestabel3" type="Label" parent="UI" unique_id=2050733914]
+offset_left = 33.0
+offset_top = 542.0
+offset_right = 189.0
+offset_bottom = 565.0
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_font_sizes/font_size = 13
+text = "Apuesta: $50"
+
+[node name="Girar" type="Button" parent="UI" unique_id=1832484516]
+offset_left = 645.0
+offset_top = 514.0
+offset_right = 825.0
+offset_bottom = 564.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8vngh")
+text = "Girar"
+
+[node name="mas" type="Button" parent="UI" unique_id=1398801521]
+offset_left = 425.0
+offset_top = 524.0
+offset_right = 475.0
+offset_bottom = 559.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xo31r")
+text = "+"
+
+[node name="menos" type="Button" parent="UI" unique_id=733013920]
+offset_left = 365.0
+offset_top = 524.0
+offset_right = 415.0
+offset_bottom = 559.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_c2yqw")
+text = "-"
+
+[node name="rojo" type="Button" parent="UI" unique_id=1644538563]
+offset_left = 25.0
+offset_top = 574.0
+offset_right = 155.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_vc8ed")
+text = " Rojo 1:1 🔴"
+
+[node name="negro" type="Button" parent="UI" unique_id=72773724]
+offset_left = 165.0
+offset_top = 574.0
+offset_right = 295.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_font_sizes/font_size = 10
+theme_override_styles/normal = SubResource("StyleBoxFlat_o504i")
+text = "Negro 1:1 ⚫"
+
+[node name="par" type="Button" parent="UI" unique_id=2035748297]
+offset_left = 305.0
+offset_top = 574.0
+offset_right = 435.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_ffrnl")
+text = "Par 1:1"
+
+[node name="impar" type="Button" parent="UI" unique_id=1169063228]
+offset_left = 445.0
+offset_top = 574.0
+offset_right = 575.0
+offset_bottom = 614.0
+theme_override_fonts/font = ExtResource("4_8vngh")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_0odjh")
+text = "Impar 1:1"

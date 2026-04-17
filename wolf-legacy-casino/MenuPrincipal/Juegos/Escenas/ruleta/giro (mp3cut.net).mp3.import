@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b70trfari7eqm"
+path="res://.godot/imported/giro (mp3cut.net).mp3-bf3f8c0e828dd7e6f072295dee65e8c1.mp3str"
+
+[deps]
+
+source_file="res://giro (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/giro (mp3cut.net).mp3-bf3f8c0e828dd7e6f072295dee65e8c1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
